@@ -1,0 +1,288 @@
+*{
+    font-family: sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #CAF4FF;
+}
+
+.header{
+    background-color: #A0DEFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    min-width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+header{
+    display: inline;
+}
+
+.logo img{
+    width: 98px;
+}
+
+.logo{
+    margin-left: 30px;
+}
+
+.nav-bar{
+    margin-right: 30px;
+}
+
+.nav-bar ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-bar ul li{
+    list-style-type: none;
+    padding: 33px;
+}
+
+.nav-bar ul li:hover{
+    background-color: #5AB2FF;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+.container1{
+    padding: 20px;
+    margin: 20px;
+    height: min-content;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    flex: 5;
+   
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+}
+
+.main-header{
+    text-align: center;
+    padding: 100px;
+}
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel{
+    width: 500px;
+    height: 300px;
+}
+
+.card-item{
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.form-card{
+    padding: 30px;
+    background-color: #CAF4FF;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    min-width: 400px;
+    text-align: justify;
+}
+
+.form-card h2{
+    text-align: center;
+    margin: 30px ;
+}
+
+.form-card input{
+    border: thick;
+    padding: 10px 59% 10px 2%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.form-card label{
+    border: thick;
+    padding: 10px 250px 10px 10px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.form-card select{
+    border: none;
+    padding: 10px 73% 10px 1%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+.form-card input[type='button']{
+    padding: 10px 45% 10px 45%;
+    margin-bottom: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    background-color: #A0DEFF;
+}
+
+.form-card input[type='button']:active{
+    background-color: #5AB2FF;
+}
+
+form{
+    margin-top: 40px;
+}
+
+.offer{
+    width: 500px;
+}
+
+.offer h2{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.offer ul{
+    padding: 20px 10%;
+}
+
+.offer p{
+    text-align: center;
+}
+
+.content{
+    display: flex;
+    flex-flow: row nowrap;
+    background-color: #FFF9D0;
+    height: 700px;
+
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.container2{
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    flex: 5;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1rem 2rem;
+    text-align: center ;
+}
+
+.card-row1{
+    display: flex;
+    flex-direction: row;
+}
+
+.card-row2{
+    display: flex;
+    flex-direction: row;
+}
+
+.card img{
+    width: 40px;
+}
+
+.container3 {
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    background-color: #FFF9D0;
+}
+
+.container3 h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.container3 p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.container3 button {
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #5AB2FF;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.container3 button:hover {
+    background-color: #5AB2FF;
+}
+
+  /* Perangkat dengan lebar layar 1200px dan di bawahnya */
+  @media screen and (min-width: 1200px) {
+    main {
+      flex-flow: column nowrap;
+    }
+   
+  }
+   
+  /* Perangkat dengan lebar layar 768px dan di bawahnya */
+  @media screen and (max-width: 700px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    .header{
+        display: flex;
+        flex-direction: column;;
+    }
+
+    .header .nav-bar{
+        margin: 0;
+    }
+
+    .logo{
+        align-self: center;
+    }
+
+    main .main-content{
+        flex-flow: column nowrap;
+    }
+
+    .content{
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .form-card{
+        margin-top: 75px;
+    }
+
+    .container2{
+        min-width: 340px;
+        margin-top: 665px;
+    }
+  }

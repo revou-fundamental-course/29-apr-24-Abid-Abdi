@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<script>ShowSlide(0);</script>
+
+<body>
+
+    <header>
+        <div class="header">
+            <div class="logo">
+                <img src="Assets/logo.png" alt="">
+            </div>
+            <nav class="nav-bar">
+                <ul>
+                    <div>
+                        <li><a href="#home">Home</a></li>
+                    </div>
+                    <div>
+                        <li><a href="#package">Our Packages</a></li>
+                    </div>
+                    <div>
+                        <li><a href="#call">Call Us</a></li>
+                    </div>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="container1" id="home">
+
+            <div class="main-header">
+                <h1>Discover the World the Easy Way</h1>
+                <h5>Teman Perjalanan Mudah: Membuat Mimpi Liburan Anda Menjadi Kenyataan</h5>
+            </div>
+
+            <div class="content">
+                <div class="main-content">
+                    <section class="content-card">
+                        <div class="carousel">
+                            <div class="card-item" style="background-image: url(Assets/bali1.jpg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/bali2.jpg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/bira.jpg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/bira2.jpeg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/labuan-bajo1.jpg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/geopark-pangkep.jpeg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/malino2.jpg);"></div>
+                            <div class="card-item" style="background-image: url(Assets/geopark-pangkep.jpg);"></div>
+                        </div>
+
+                        <div><br>
+                            <caption class="caption">"Liburan Menjadi Menyenangkan Bersama Travel Agent Ku"</caption>
+                            <div class="profile">
+                                <img src="" alt="" class="profile-img">
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="offer">
+                        <h2>Special Travel Packages</h2>
+                        <p>Explore our exciting travel packages tailored just for you!</p>
+                        <ul>
+                            <li>
+                                <strong>Bali Adventure</strong>
+                                <p>Discover the stunning beauty of Bali with our adventure-packed tour.</p>
+                            </li>
+                            <li>
+                                <strong>City Escape - Jakarta</strong>
+                                <p>Experience the vibrant city life of Jakarta with our city escape package.</p>
+                            </li>
+                            <li>
+                                <strong>Mountaineer's Delight - Bandung</strong>
+                                <p>Climb the beautiful mountains of Bandung with our mountaineer's package.</p>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+
+                <section class="form-card">
+                    <h2>Contact Us</h2>
+                    <p>Our team is here to assist you in planning your dream vacation! Whether you're looking for a
+                        relaxing beach getaway, an adventurous mountain trek, or a cultural exploration in vibrant
+                        cities, we'll tailor a travel package that suits your preferences.</p>
+                    <p>Fill out the form below with your details and desired destination, and one of our travel experts
+                        will reach out to you within 24 hours to discuss your travel plans and provide personalized
+                        recommendations. Your dream holiday awaits!</p>
+
+                    <form action="">
+                        <div>
+                            <label for="username">Your Name :</label><br>
+                            <input type="text" name="username" id="username" placeholder="First and Last Name">
+                        </div>
+                        <div>
+                            <label for="email">E-mail Address :</label><br>
+                            <input type="email" name="email" id="email" placeholder="Example@domain.com">
+                        </div>
+                        <div>
+                            <label for="Destination">Select Destination :</label> <br>
+                            <select name="destination" id="destination">
+                                <option value="0" disabled selected>Select Option</option>
+                                <option value="1">Bali</option>
+                                <option value="2">Bandung</option>
+                                <option value="3">Jakarta</option>
+                                <option value="4">Makassar</option>
+                                <option value="5">Labuan Bajo</option>
+                                <option value="6">Surabaya</option>
+                            </select><br>
+                            <input type="button" value="Send" id="send-btn">
+
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+        </div>
+
+
+        <div class="container2" id="package">
+            <h1>Our Packages</h1>
+        
+            <div class="card-row1">
+                <div class="card">
+                    <img src="Assets/pin.png" alt="Bali">
+                    <h2>Bali</h2>
+                    <p>Bali adalah surga tropis yang terkenal dengan pantainya yang eksotis, budaya yang kaya, dan aktivitas wisata petualangan. Nikmati pantai-pantai berpasir putih, sawah terasering, dan kuil-kuil kuno yang memikat.</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/pin.png" alt="Bandung">
+                    <h2>Bandung</h2>
+                    <p>Bandung dikenal sebagai kota kreatif yang menawarkan kombinasi unik antara alam, seni, dan budaya. Nikmati udara sejuk di pegunungan, jelajahi museum seni dan arsitektur, dan nikmati kuliner khas Jawa Barat.</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/pin.png" alt="Jakarta">
+                    <h2>Jakarta</h2>
+                    <p>Jakarta adalah ibu kota Indonesia yang modern dan sibuk, menawarkan kehidupan malam yang menggairahkan, pusat perbelanjaan terkemuka, serta sejarah dan budaya yang kaya.</p>
+                </div>
+            </div>
+        
+            <div class="card-row2">
+                <div class="card">
+                    <img src="Assets/pin.png" alt="Makassar">
+                    <h2>Makassar</h2>
+                    <p>Makassar adalah gerbang menuju Sulawesi Selatan, terkenal dengan pantainya yang indah dan kekayaan budaya lokal. Jelajahi benteng-benteng bersejarah, nikmati makanan laut lezat, dan kunjungi pasar tradisional yang ramai.</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/pin.png" alt="Labuan Bajo">
+                    <h2>Labuan Bajo</h2>
+                    <p>Labuan Bajo adalah gerbang menuju Taman Nasional Komodo, tempat tinggal komodo yang langka. Selain itu, nikmati snorkeling dan diving di perairan kristal yang mempesona.</p>
+                </div>
+                <div class="card">
+                    <img src="Assets/pin.png" alt="Surabaya">
+                    <h2>Surabaya</h2>
+                    <p>Surabaya adalah kota pelabuhan yang dinamis, dikenal dengan kehidupan malamnya yang sibuk, arsitektur bersejarah, dan warisan budaya. Jelajahi pasar-pasar tradisional dan nikmati kuliner khas Jawa Timur.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container3" id="call">
+            <h2>Need Assistance?</h2>
+            <p>Contact us for personalized travel recommendations and bookings.</p>
+            <button onclick="callUs()">Call Us Now</button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script>ShowSlide(0);</script>
+</body>
+
+</html>
